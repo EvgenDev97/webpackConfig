@@ -1,0 +1,16 @@
+@import "./libs/normalize.css";
+@import "./styles/var.scss";
+@import './styles/fonts';
+
+body{
+    font-family: 'Inter';
+    background-color: $back;
+    color: white;
+}
+
+// .image{
+//     width: 300px;
+//     height: 300px;
+//     background-size: cover;
+//     background-image: url("/src/img/Rectangle.jpg");
+// }
