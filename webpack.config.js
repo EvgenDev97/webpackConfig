@@ -14,7 +14,7 @@ module.exports = {
   target,
   devtool,
   devServer: {
-    port: 80,
+    port: 8080,
     open: true,
     hot: true,
   },
@@ -51,6 +51,13 @@ module.exports = {
               postcssOptions: {
                 plugins: [require("postcss-preset-env")],
               },
+            },
+          },
+          {
+            loader: "resolve-url-loader",
+            options: {
+              debug: true,
+              sourceMap: true,
             },
           },
           // Compiles Sass to CSS
